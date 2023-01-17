@@ -9,44 +9,6 @@
   *This is the final Project of the Udacity AI with Python Nanodegree*
 
 
-## Prerequisites
-The Code is written in Python 3.6.5 . If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. 
-
-To install pip run in the command Line
-```
-python -m ensurepip -- default-pip
-``` 
-to upgrade it 
-```
-python -m pip install -- upgrade pip setuptools wheel
-```
-to upgrade Python
-```
-pip install python -- upgrade
-```
-Additional Packages that are required are: [Numpy](http://www.numpy.org/), [Pandas](https://pandas.pydata.org/), [MatplotLib](https://matplotlib.org/), [Pytorch](https://pytorch.org/), PIL and json.\
-You can donwload them using [pip](https://pypi.org/project/pip/)
-```
-pip install numpy pandas matplotlib pil
-```
-or [conda](https://anaconda.org/anaconda/python)
-```
-conda install numpy pandas matplotlib pil
-```
-In order to intall Pytorch head over to the Pytorch site select your specs and follow the instructions given.
-
-## Viewing the Jyputer Notebook
-In order to better view and work on the jupyter Notebook I encourage you to use [nbviewer](https://nbviewer.jupyter.org/) . You can simply copy and paste the link to this website and you will be able to edit it without any problem. Alternatively you can clone the repository using 
-```
-git clone https://github.com/fotisk07/Image-Classifier/
-```
-then in the command Line type, after you have downloaded jupyter notebook type
-```
-jupyter notebook
-```
-locate the notebook and run it.
-
-
 ## Command Line Application
 * Train a new network on a data set with ```train.py```
   * Basic Usage : ```python train.py data_directory```
@@ -89,7 +51,7 @@ As you can see you have a wide selection of hyperparameters available and you ca
 * A small learning rate guarantees that the network will reach greater accuracies but the learning process will take longer
 * Densenet121 works best for images but the training process takes significantly longer than alexnet or vgg16
 
-*My settings were lr=0.001, dropoup=0.5, epochs= 15 and my test accuracy was 86% with densenet121 as my feature extraction model.
+*My settings were lr=0.001, epochs= 1 and my test accuracy was 82% with vgg16 as my feature extraction model.
 
 ## Pre-Trained Network
 The checkpoint.pth file contains the information of a network trained to recognise 102 different species of flowers. I has been trained with specific hyperparameters thus if you don't set them right the network will fail. In order to have a prediction for an image located in the path /path/to/image using my pretrained model you can simply type ```python predict.py /path/to/image checkpoint.pth```
