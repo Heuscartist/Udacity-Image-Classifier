@@ -94,4 +94,4 @@ As you can see you have a wide selection of hyperparameters available and you ca
 ## Pre-Trained Network
 The checkpoint.pth file contains the information of a network trained to recognise 102 different species of flowers. I has been trained with specific hyperparameters thus if you don't set them right the network will fail. In order to have a prediction for an image located in the path /path/to/image using my pretrained model you can simply type ```python predict.py /path/to/image checkpoint.pth```
 
-[Certificate](https://graduation.udacity.com/confirm/396772P3)
+[Certificate](https://confirm.udacity.com/ERDFZXZT)
